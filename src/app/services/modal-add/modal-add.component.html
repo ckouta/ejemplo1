@@ -1,0 +1,64 @@
+<!-- Modal -->
+<div class="modal" [ngStyle]="{'display':modalAddService.oculto}"  tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title">Crear productos</h4>
+        <button (click)="ocultarModal()" type="button" class="close" data-dismiss="modal">&times;</button>
+        
+      </div>
+      <div class="modal-body">
+        <!--Nombre del producto-->
+        <div class="form-group row">
+          <label class="col-3 col-form-label">Nombre</label>
+          <div>
+            <!--formControlName="name"-->
+          <input  type="text" class="form-control" placeholder="Nombre">
+          </div>
+        </div>
+         <!--Codigo del producto-->
+         <div class="form-group row">
+            <label class="col-3 col-form-label">Codigo</label>
+            <div>
+            <input type="number" class="form-control" placeholder="Codigo">
+            </div>
+          </div>
+        <!--Fecha de Registro-->
+        <div class="form-group row">
+            <label class="col-3 col-form-label">Fecha</label>
+            <div>
+            <input type="date"  class="form-control" placeholder="Fecha">
+            </div>
+          </div>
+          <!--Precio del producto-->
+        <div class="form-group row">
+            <label class="col-3 col-form-label">Precio</label>
+            <div>
+            <input type="number" class="form-control" placeholder="Precio">
+            </div>
+          </div>
+           <!--Rating del producto-->
+        <div class="form-group row">
+            <label class="col-3 col-form-label">Rating</label>
+            <div>
+            <input type="number" class="form-control" placeholder="Rating">
+            </div>
+          </div>
+          <!--Descripcion del producto-->
+        <div class="form-group row">
+            <label class="col-3 col-form-label">Descripcion</label>
+            <div>
+            <input type="text" name="" id="" class="form-control" placeholder="Descripcion">
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button (click)="ocultarModal()" type="button" class="btn btn-danger">Close</button>
+      </div>
+    </div>
+
+  </div>
+  </div>
